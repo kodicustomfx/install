@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.genesis" name="Genesis" version="5.1.4" provider-name="lambda">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.requests" version="1.0.0" />
+		<import addon="script.module.metahandler" optional="true" />
+		<import addon="plugin.video.youtube" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">The origins of streaming</summary>
+		<description lang="en">Visit TVADDONS.ag for support</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<forum>http://forums.tvaddons.ag/forums/148-lambda-s-xbmc-addons</forum>
+		<source>https://offshoregit.com/lambda81/</source>
+		<website>https://offshoregit.com/lambda81/</website>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.salts" version="1.0.47" name="Stream All The Sources" provider-name="tknorris">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.urlresolver" version="2.2.0"/>
+        <import addon="script.module.myconnpy" version="1.1.6" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+     <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary>Stream video from many difference sources</summary>
+        <description>This addon uses trakt.tv for most show and movie meta data and uses a variety of websites for hoster sources</description>
+        <platform>all</platform>
+        <website>http://tvaddons.ag/</website>
+		<forum>http://forums.tvaddons.ag/forums/180-TKNORRIS-RELEASE-REPOSITORY</forum>
+	</extension>
+</addon>
+
+addon id="repository.kodi.fx" name="kodi.fx" version="1.0" provider-name="kodi.fx">
+	<extension point="xbmc.addon.repository" name="kodi.fx">
+		<info compressed="false">https://github.com/kodicustomfx/repo/blob/master/addons.xml</info>
+		<checksum>https://github.com/kodicustomfx/repo/blob/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/kodicustomfx/repo</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>kodi.fx repository</summary>
+		<description>Kodi custom fx addon repository</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>
